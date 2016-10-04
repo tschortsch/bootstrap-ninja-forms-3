@@ -1,0 +1,28 @@
+/* Ninja Forms */
+.nf-form-cont {
+  // Colors
+  .nf-error {
+    @extend .has-error;
+  }
+  .ninja-forms-req-symbol, .nf-error-msg {
+    color: $state-danger-text;
+  }
+
+  // Sizes
+  .nf-field-element input,
+  .nf-field-element select {
+    height: $input-height-base;
+
+    &.input-lg {
+      height: $input-height-large;
+    }
+    &.input-sm {
+      height: $input-height-small;
+    }
+  }
+  .nf-field-element input[type='checkbox'],
+  .nf-field-element input[type='radio'],
+  .nf-field-element select[multiple] {
+    height: auto;
+  }
+}
